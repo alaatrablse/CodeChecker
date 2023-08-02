@@ -1,0 +1,39 @@
+﻿<Window x:Class="CodeChecker.AddHW"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CodeChecker"
+        mc:Ignorable="d"
+        Title="AddHW" Height="370" Width="600">
+    <Grid Margin="0,0,0,-6">
+        <TextBox x:Name="textbox" HorizontalAlignment="Left" Margin="191,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" Height="24"/>
+        <Button Content="OK" HorizontalAlignment="Center" Margin="0,294,0,0" VerticalAlignment="Top" Height="30" Width="80" Click="Button_Click"/>
+        <Label Content="name of the homework :" HorizontalAlignment="Left" Margin="29,38,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rules" HorizontalAlignment="Left" Margin="194,69,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="points1" HorizontalAlignment="Left" Margin="300,105,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Height="22" RenderTransformOrigin="0.5,1.515" MaxLength="3" MaxLines="1" PreviewTextInput="NumberValidationTextBox" TextChanged="points1_TextChanged"/>
+        <Label Content="points:" HorizontalAlignment="Left" Margin="337,82,0,0" VerticalAlignment="Top"/>
+        <Label Content="1) " HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="2)" HorizontalAlignment="Left" Margin="10,143,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Checking that a file exists" HorizontalAlignment="Left" Margin="29,147,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.142,0.941"/>
+        <TextBox x:Name="filename" HorizontalAlignment="Left" Margin="175,148,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Height="22" RenderTransformOrigin="0.5,1.515" MaxLines="1"/>
+        <Label Content="file name:" HorizontalAlignment="Left" Margin="204,128,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="edit" HorizontalAlignment="Left" Margin="460,147,0,0" VerticalAlignment="Top" Width="120" Height="22" SelectionChanged="edit_SelectionChanged"/>
+        <Label Content="edit:" HorizontalAlignment="Left" Margin="504,127,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="points2" HorizontalAlignment="Left" Margin="307,148,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="65" Height="22" RenderTransformOrigin="0.5,1.515" MaxLength="3" MaxLines="1" PreviewTextInput="NumberValidationTextBox" TextChanged="points2_TextChanged"/>
+        <Label Content="points:" HorizontalAlignment="Left" Margin="314,128,0,0" VerticalAlignment="Top" />
+        <Label x:Name="ff" Content="3)" HorizontalAlignment="Left" Margin="10,192,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="addbut" Content="Add" HorizontalAlignment="Left" Margin="394,148,0,0" VerticalAlignment="Top" FontSize="14" Width="50" Height="22" Click="addbut_Click"/>
+        <Label Content="Checking that a regular expression" HorizontalAlignment="Left" Margin="33,195,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.142,0.941"/>
+        <TextBox x:Name="points3" HorizontalAlignment="Left" Margin="487,198,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="65" Height="22" RenderTransformOrigin="0.5,1.515" MaxLength="3" MaxLines="1" PreviewTextInput="NumberValidationTextBox" TextChanged="points3_TextChanged"/>
+        <Label Content="points:" HorizontalAlignment="Left" Margin="497,177,0,0" VerticalAlignment="Top" />
+        <Label Content="Not submitted" HorizontalAlignment="Left" Margin="55,102,0,0" VerticalAlignment="Top" Width="152"/>
+        <TextBox x:Name="stringinput" HorizontalAlignment="Left" Margin="230,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="22"/>
+        <Label Content="regular expression :" HorizontalAlignment="Left" Margin="231,178,0,0" VerticalAlignment="Top" />
+        <ComboBox x:Name="edit2" HorizontalAlignment="Left" Margin="323,244,0,0" VerticalAlignment="Top" Width="153" Height="22" SelectionChanged="edit2_SelectionChanged" />
+        <Label Content="edit:" HorizontalAlignment="Left" Margin="383,222,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="addbut2" Content="Add" HorizontalAlignment="Left" Margin="231,243,0,0" VerticalAlignment="Top" FontSize="14" Width="50" Height="22" Click="addbut2_Click" />
+
+
+    </Grid>
+</Window>

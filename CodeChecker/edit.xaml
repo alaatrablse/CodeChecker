@@ -1,0 +1,18 @@
+﻿<Window x:Class="CodeChecker.edit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CodeChecker"
+        mc:Ignorable="d"
+        Title="edit" Height="400" Width="550">
+    <Grid>
+        <Label Content="system to update the student average " HorizontalAlignment="Center" Margin="0,32,0,0" VerticalAlignment="Top" Width="277" FontSize="16"/>
+        <Label x:Name="name" Content="name of student : " HorizontalAlignment="Left" Margin="147,85,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="txtId" Content="Id of student : " HorizontalAlignment="Left" Margin="147,116,0,0" VerticalAlignment="Top"/>
+        <Label Content="Average : " HorizontalAlignment="Left" Margin="147,154,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="averageinput" HorizontalAlignment="Left" Margin="283,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26" PreviewTextInput="NumberValidationTextBox" TextChanged="averageinput_TextChanged"/>
+        <Button x:Name="savebut" Content="Save change" HorizontalAlignment="Left" Margin="312,223,0,0" VerticalAlignment="Top" Height="28" Width="102" Click="savebut_Click"/>
+        <Button x:Name="cancelbut" Content="cancel" HorizontalAlignment="Left" Margin="147,223,0,0" VerticalAlignment="Top" Height="28" Width="101" Click="cancelbut_Click"/>
+    </Grid>
+</Window>
